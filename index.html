@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="icon" type="image/x-icon" href="./assets/unnamed.png"><!--icon here -->
+    <script src="./scripts/app.js" defer></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <div>
+        <div class="navbar-placeholder"></div>
+        <nav class="navbar flex">
+            <a href ="#home"><img src="./assets/unnamed.png" alt="logo" class="animation"></a>
+            <i class="fa-solid fa-bars animation"></i>
+            <div class="nav-menu flex">
+                <i class="fa-solid fa-x animation"></i>
+                <a href="#home" class="animation">Home</a>
+                <a href="#about" class="animation">About</a>
+                <a href="#contact" class="animation">Contact</a>
+            </div>
+            <a href="#contact" class="btn nav-btn animation">Contact</a>
+        </nav>
+    </div>
+
+    <!-- hero -->
+    <div class="hero flex" id="home">
+        <img src="./assets/unnamed.png" alt="student">
+        <h1><span class="text-effect">I'm Bailey Cooper,</span> a full time university student</h1>
+        <a href="./assets/Bailey_Cooper_CV (2).pdf" class="hero-cv animation" target="_blank" rel="noopener noreferrer">CV</a>
+    </div>
+
+    <!-- about -->
+     <section class="container flex" id="about">
+        <div class="container-title">
+            <h2>About Me</h2>
+            <img src="./assets/aesthetic-wave-border-free-png.png" alt="decoration">
+        </div>
+        <div class="about-sections flex">
+            <div class="about-left flex">
+                <img src="./assets/unnamed.png" alt="uni student">
+            </div>
+            <div class="about-right flex">
+                <p>I am a full time student that loves to solve complex problems.</p>
+            </div>
+        </div>
+        <div class="about-skills">
+            <div>
+                <h3>Retail</h3>
+                <div class="about-skill flex animation">
+                    <p>Customer Service</p>
+                    <hr style="width: 100%;">
+                </div>
+                <div class="about-skill flex animation">
+                    <p>Time Management</p>
+                    <hr style="width: 90%;">
+                </div>
+                <div class="about-skill flex animation">
+                    <p>Communication</p>
+                    <hr style="width: 85%;">
+                </div>
+                <div class="about-skill flex animation">
+                    <p>Critical Thinking</p>
+                    <hr style="width: 75%;">
+                </div>
+            </div>
+            <div>
+                <h3>Warehouse/Trade</h3>
+                <div class="about-skill flex animation">
+                    <p>Manual Handling</p>
+                    <hr style="width: 100%;">
+                </div>
+                <div class="about-skill flex animation">
+                    <p>Health and Safety</p>
+                    <hr style="width: 100%;">
+                </div>
+                <div class="about-skill flex animation">
+                    <p>Multitasking</p>
+                    <hr style="width: 90%;">
+                </div>
+                <div class="about-skill flex animation">
+                    <p>Communication</p>
+                    <hr style="width: 85%;">
+                </div>
+            </div>
+        </div>
+        <div class="about-achievements flex">
+            <hr>
+            <div class="about-achievement flex animation">
+                <h2 class="text-effect">3+</h2>
+                <p>Years of Driving Experience</p>
+            </div>
+            <hr>
+            <div class="about-achievement flex animation">
+                <h2 class="text-effect">2+</h2>
+                <p>Years of Supervising Experience</p>
+            </div>
+            <hr>
+            <div class="about-achievement flex animation">
+                <h2 class="text-effect">CSCS</h2>
+                <p>Qualified</p>
+            </div>
+            <hr>
+        </div>
+     </section>
+
+     <!-- contact -->
+      <section class="container flex" id="contact">
+        <div class="container-title">
+            <h2>Contact Me</h2>
+            <img src="./assets/aesthetic-wave-border-free-png.png" alt="decoration">
+        </div>
+        <div class="contact-section flex">
+            <div class="contact-left flex">
+                <h2 class="text-effect">Let's Talk</h2>
+                <p>Contact me about current or future employment.</p>
+                <div class="contact-details flex">
+                    <div class="contact-detail flex">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>cooperbailey012@gmail.com</p>
+                    </div>
+                    <div class="contact-detail flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>07847852540</p>
+                    </div>
+                    <div class="contact-detail flex">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>UK</p>
+                    </div>
+                </div>
+            </div>
+            <form action="https://formsubmit.co/cooperbailey012@gmail.com" method="POST" class="contact-right flex">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <label for="message">Enter a message</label>
+                <textarea name="message" id="message" placeholder="Leave a message"></textarea>
+
+                <button type="submit" class="btn animation">Submit</button>
+            </form>
+        </div>
+      </section>
+
+      <!-- footer -->
+       <footer class="flex">
+        <div class="footer-top flex">
+            <div class="footer-top-left">
+                <img src="./assets/unnamed.png" alt="logo">
+            </div>
+            <div class="footer-top-right">
+                <p>I'm a university student with 5+ years of working experience</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom"></div>
+       </footer>
+</body>
+
+
+
+
+</html>
